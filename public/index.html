@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
+    <title>Chat APP</title>
+</head>
+<body>
+    <h1>Mi Chat APP</h1>
+    <div id="messages"></div>
+    <form onsubmit="return addMessage(this)">
+        <input type="text" id="username" placeholder="Tu Nombre" >
+        <input type="text" id="texto" cols="50" rows="10" name="comenterios" placeholder="Cuéntanos algo...">
+        <!-- <textarea name="" id="texto" cols="50" rows="10" placeholder="Cuéntanos algo..."></textarea> -->
+        <input type="submit" value="Enviar">
+    </form>
+    
+    
+</body>
+</html>
